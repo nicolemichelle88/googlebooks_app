@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Books Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Google Books Search</h1>
+        <div class="search-container">
+            <!-- Screen reader only label for search input -->
+            <label for="search-input" class="sr-only">Search for books</label>
+            <!-- Search input field -->
+            <input type="text" id="search-input" placeholder="Search for books..." aria-label="Search for books">
+            <!-- Search button -->
+            <button id="search-button" aria-label="Search">Search</button>
+        </div>
+
+        <div id="results-info" aria-live="polite">
+            <!-- Display total results -->
+            <p>Total Results: <span id="total-results"></span></p>
+            <!-- Display most common author -->
+            <p>Most Common Author: <span id="common-author"></span></p>
+            <!-- Display earliest publication date -->
+            <p>Earliest Publication Date: <span id="earliest-date"></span></p>
+            <!-- Display latest publication date -->
+            <p>Latest Publication Date: <span id="latest-date"></span></p>
+            <!-- Display server response time -->
+            <p>Response Time: <span id="response-time"></span> seconds</p>
+        </div>
+
+        <!-- Container for search results -->
+        <ul id="results" aria-live="polite"></ul>
+
+        <!-- Pagination controls -->
+        <div class="pagination">
+            <button id="prev-page" aria-label="Previous page" disabled>Previous</button>
+            <span id="page-numbers" aria-label="Page numbers"></span>
+            <button id="next-page" aria-label="Next page" disabled>Next</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

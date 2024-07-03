@@ -1,0 +1,202 @@
+/* styles.css */
+
+/* Base styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0072b2;
+    margin: 0;
+    padding: 0;
+    color: #494b4b;
+}
+
+/* Container for the application */
+#app {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #bbe1f6;
+    color: #494b4b;
+}
+
+/* Styles for the main heading */
+h1 {
+    text-align: center;
+    color: #0072b2;
+}
+
+/* Container for the search input and button */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for the search input */
+#search-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #0072b2;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #494b4b;
+}
+
+/* Styles for the search button */
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #e69f00;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the search button */
+#search-button:hover {
+    background-color: #0072b2;
+}
+
+/* Container for displaying results information */
+#results-info {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #494b4b;  /* Ensure text color is set to be visible */
+    background-color: #fff;  /* Set background to white for visibility */
+    padding: 10px;  /* Add padding for spacing */
+    border-radius: 4px;  /* Add border radius for rounded corners */
+}
+
+#results-info p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Container for the search results */
+#results {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styles for each result item */
+#results li {
+    background: #bbe1f6;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #009e73;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: #494b4b;
+}
+
+/* Hover effect for result items */
+#results li:hover {
+    background: #f2cf7f;
+}
+
+/* Styles for the description text */
+.description {
+    margin-top: 10px;
+    color: #0072b2;  /* Initial color for the description text */
+    font-style: italic;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Container for pagination controls */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Styles for pagination buttons */
+.pagination button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+/* Disabled state for pagination buttons */
+.pagination button:disabled {
+    background-color: #bbe1f6;
+    cursor: not-allowed;
+}
+
+/* Styles for the "First" and "Previous" buttons */
+#first-page,
+#prev-page {
+    background-color: #56B4E9;
+    color: white;
+}
+
+/* Hover effect for the "First" and "Previous" buttons */
+#first-page:hover,
+#prev-page:hover {
+    background-color: #0072b2;
+}
+
+/* Styles for the "Next" and "Last" buttons */
+#next-page,
+#last-page {
+    background-color: #e69f00;
+    color: white;
+}
+
+/* Hover effect for the "Next" and "Last" buttons */
+#next-page:hover,
+#last-page:hover {
+    background-color: #0072b2;
+}
+
+/* Container for page numbers */
+#page-numbers {
+    display: flex;
+}
+
+/* Styles for page number spans */
+#page-numbers span {
+    margin: 0 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    background-color: #ccc;  /* Neutral color */
+    color: #494b4b;
+}
+
+/* Hover effect for page number spans */
+#page-numbers span:hover {
+    background-color: #888;  /* Darker neutral color */
+    color: white;
+}
+
+/* Active page number styles */
+#page-numbers .active {
+    font-weight: bold;
+    background-color: #888;  /* Darker neutral color */
+    color: white;
+}
+
+/* Screen reader only class */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
