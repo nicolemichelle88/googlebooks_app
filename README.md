@@ -81,7 +81,6 @@ cd google-books-search-app
 - The `results-info` section displays the total number of results, the most common author, the earliest publication date, the latest publication date, and the server response time.
 
 
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
