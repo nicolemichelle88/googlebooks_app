@@ -54,13 +54,7 @@ cd googlebooks_app
 
 1. **Open `index.html`**:
 
-    Open the `index.html` file in your preferred web browser. You can also use a simple HTTP server to serve the file:
-
-    ```bash
-    python3 -m http.server
-    ```
-
-    Then, navigate to `http://localhost:8000` in your web browser.
+    Open the `index.html` file in your preferred web browser. 
 
 ### Search for Books
 
