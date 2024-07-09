@@ -13,8 +13,8 @@ This is a simple web application that allows users to search for books using the
 
 Before you begin, ensure you have the following installed on your machine:
 
-- Python 3.x
-- pip (Python package installer)
+- [Python 3.x](https://www.python.org/downloads/)
+- [pip (Python package installer)](https://pip.pypa.io/en/stable/installation/)
 
 ## Getting Started
 
@@ -23,8 +23,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/google-books-search-app.git
-cd google-books-search-app
+git clone git@github.com:nicolemichelle88/googlebooks_app.git
+cd googlebooks_app
 ```
 
 ### Set Up the Backend
@@ -32,20 +32,20 @@ cd google-books-search-app
 1. **Create a Virtual Environment** (optional but recommended):
 
     ```bash
-    python -m venv venv
+    python3 -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
 
 2. **Install Flask and Requests**:
 
     ```bash
-    pip install Flask requests flask-cors
+    pip3 install Flask requests flask-cors
     ```
 
 3. **Run the Flask App**:
 
     ```bash
-    python app.py
+    python3 app.py
     ```
 
     The backend server will start on `http://127.0.0.1:5000`.
@@ -57,7 +57,7 @@ cd google-books-search-app
     Open the `index.html` file in your preferred web browser. You can also use a simple HTTP server to serve the file:
 
     ```bash
-    python -m http.server
+    python3 -m http.server
     ```
 
     Then, navigate to `http://localhost:8000` in your web browser.
